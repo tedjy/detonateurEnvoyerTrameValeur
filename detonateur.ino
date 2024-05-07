@@ -49,9 +49,6 @@ void loop() {
     } else {
         digitalWrite(blueLedPin, HIGH); // Éteindre la LED bleue
     }
-
-    
-    // Autres parties de la boucle de programme...
 }
 
 // Fonction pour envoyer la valeur 1 au serveur via POST
