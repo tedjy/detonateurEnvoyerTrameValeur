@@ -1,9 +1,9 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-const char* ssid = "TP-LINK_B05";
-const char* password = "BTSbts22";
-const char* serverUrl = "http://172.16.200.54/sw/arduinoESP8266/recevoirValeur.php"; // URL du fichier PHP
+const char* ssid = "NomDuModemWifi";
+    const char* password = "MotDePasse";
+const char* serverUrl = "http://adresseIP/sw/arduinoESP8266/recevoirValeur.php"; // URL du fichier PHP
 
 int startButtonPin = 4; // Bouton de démarrage (Bouton vert), broche GPIO 4 : D2
 int stopButtonPin = 0; // Bouton d'arrêt (Bouton bleu), broche GPIO 0 : D3
@@ -82,3 +82,5 @@ void envoyerValeur(int valeur) {
     // Fermer la connexion HTTP
     http.end();
 }
+
+// importer les librairies ensuite installer les drivers pour l'ecoute du port com
